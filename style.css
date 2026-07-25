@@ -465,6 +465,38 @@ a { text-decoration: none; color: inherit; }
 .vcard-wa svg {
   flex-shrink: 0;
 }
+.vcard-btns-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+.vcard-btns-group .vcard-wa {
+  margin-top: 0;
+}
+.vcard-btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 22px;
+  border-radius: 28px;
+  background: var(--gold);
+  color: #0d1117 !important;
+  font-family: var(--ff-body);
+  font-size: .82rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: .02em;
+  transition: all .25s, transform .2s;
+  border: 1px solid var(--gold);
+}
+.vcard-btn-gold:hover {
+  background: var(--gold-l);
+  border-color: var(--gold-l);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(201, 168, 76, 0.3);
+}
+
 
 /* ─── QR Code Wrapper ────────────────────────────────────── */
 .qr-wrap {
